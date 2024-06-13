@@ -4,83 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Escape - The Oracle</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            background: url('matrix-background.png') no-repeat center center fixed;
-            background-size: cover;
-            color: #00FF00;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-        .header {
-            background-color: rgba(0, 0, 0, 0.9);
-            color: #00FF00;
-            padding: 20px 0;
-            border-bottom: 1px solid #00FF00;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        .main-content {
-            padding: 50px 20px;
-        }
-        .main-content h1 {
-            font-size: 48px;
-            color: #00FF00;
-        }
-        .main-content p {
-            font-size: 18px;
-            color: #00FF00;
-        }
-        .main-content .highlight {
-            color: #00CC00;
-        }
-        .form-container {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-            margin-top: 30px;
-        }
-        .form-container label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-            color: #00FF00;
-        }
-        .form-container input[type="file"] {
-            display: block;
-            margin-bottom: 20px;
-        }
-        .form-container button {
-            background-color: #00FF00;
-            color: #000;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .form-container button:hover {
-            background-color: #00CC00;
-        }
-        .response-container {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #00FF00;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header">
@@ -100,21 +24,6 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('dispute-form').addEventListener('submit', async function(event) {
-            event.preventDefault();
-            const formData = new FormData();
-            const fileInput = document.getElementById('document');
-            formData.append('document', fileInput.files[0]);
-
-            const response = await fetch('/api/submit-dispute', {
-                method: 'POST',
-                body: formData
-            });
-
-            const result = await response.json();
-            document.getElementById('response').innerText = result.message;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

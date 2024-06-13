@@ -6,6 +6,7 @@ body {
     background-size: cover;
     color: #00FF00;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -15,30 +16,32 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
 .header {
     background-color: rgba(0, 0, 0, 0.9);
     color: #00FF00;
     padding: 20px 0;
     border-bottom: 1px solid #00FF00;
 }
+
 .header h1 {
     margin: 0;
     font-size: 36px;
 }
+
 .main-content {
     padding: 50px 20px;
 }
+
 .main-content h1 {
     font-size: 48px;
     color: #00FF00;
 }
-.main-content p {
-    font-size: 18px;
-    color: #00FF00;
-}
+
 .main-content .highlight {
     color: #00CC00;
 }
+
 .form-container {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
@@ -46,16 +49,20 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 30px;
 }
+
 .form-container label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
     color: #00FF00;
 }
+
 .form-container input[type="file"] {
     display: block;
     margin-bottom: 20px;
+    color: #00FF00;
 }
+
 .form-container button {
     background-color: #00FF00;
     color: #000;
@@ -65,9 +72,11 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+
 .form-container button:hover {
     background-color: #00CC00;
 }
+
 .response-container {
     margin-top: 20px;
     font-size: 18px;
