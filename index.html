@@ -9,10 +9,23 @@
 <body>
     <header class="header">
         <h1>System Escape</h1>
-    </header>
-    <main class="main-container">
-        <section class="chat-container">
-            <h2>Welcome to The Oracle</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-button">Get Started</button>
+        </nav>
+    </div>
+</header>
+<main class="main-container">
+    <div class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Welcome to <span class="highlight">The Oracle</span></h2>
+                <p>Your portal to escaping the system.</p>
+            </div>
             <div class="chat-box" id="chat-box">
                 <!-- Chat messages will appear here -->
             </div>
@@ -23,7 +36,13 @@
             </form>
             <div id="response" class="response-container"></div>
         </section>
-    </main>
-    <script src="script.js"></script>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 System Escape, Powered by JayceLabs, LLC. All rights reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
