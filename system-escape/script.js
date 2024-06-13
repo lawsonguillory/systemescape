@@ -1,3 +1,7 @@
+document.getElementById('upload-button').addEventListener('click', function() {
+    document.getElementById('document').click();
+});
+
 document.getElementById('dispute-form').addEventListener('submit', async function(event) {
     event.preventDefault();
     const formData = new FormData();

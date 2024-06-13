@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>THE ORACLE</h1>
-    </div>
-    <div class="container">
-        <div class="main-content">
-            <h1>Take the first step and <span class="highlight">ESCAPE</span> The System.</h1>
-        </div>
-        <div class="form-container">
-            <form id="dispute-form">
-                <label for="document">Upload Document:</label>
-                <input type="file" id="document" name="document" required>
-                <button type="submit">Submit</button>
+    <header class="header">
+        <h1>System Escape</h1>
+    </header>
+    <main class="main-container">
+        <section class="chat-container">
+            <h2>Welcome to The Oracle</h2>
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <form id="dispute-form" class="chat-form">
+                <input type="file" id="document" name="document" required hidden>
+                <button type="button" id="upload-button">Upload Document</button>
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button type="submit" id="send-button">Send</button>
             </form>
             <div id="response" class="response-container"></div>
-        </div>
-    </div>
-
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
