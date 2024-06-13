@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: url('matrix-background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #00FF00;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.chat-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #00FF00;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00FF00;
+}
+
+#send-button {
+    padding: 10px;
+    background: #00FF00;
+    border: none;
+    cursor: pointer;
+}
